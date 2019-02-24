@@ -99,7 +99,16 @@
 .detailNews p{
     line-height: 26px;
 }
-
+.single-news__profile {
+    color: #999;
+    margin: 15px 0;
+}
+.single-news__profile span {
+    margin: 0 10px 0 0;
+}
+.single-news__profile span i {
+    margin: 0 5px 0 0;
+}
 /*****relation article****/
 .related-post__headline {
     margin: 30px 0 5px;

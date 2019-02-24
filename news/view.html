@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/simple-line-icons.css">
+        <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="../css/h.css">
+        <link rel="stylesheet" type="text/css" href="../css/n.css">
+        <link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="../css/r.css">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+               
+    </head>
+    <body>
+        <header>
+            <div class="head__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="head__top--inner">
+                                <div class="leftInfo">
+                                    <span class="top-hotline"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0363131815">0363131815</a></span>
+                                    <span class="top-email"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto: lephuongquynh96@gmail.com">lephuongquynh96@gmail.com</a></span>
+                                </div>
+                                <div class="rightInfo">
+                                    <span class="top-hotline"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Số 17 Phùng Khoang 2, Nam Từ Liêm, Hà Nội</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head__logo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="head__logo--inner">
+                                <div class="head__col--logo">
+                                        <h1>
+                                            <div class="logo">
+                                                <a href="/">
+                                                    <img src="../img/logo.png" />
+                                                </a>
+                                            </div>
+                                        </h1>
+                                    <a id="menuMobile">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="head__col--form">
+                                    <div class="search-box">
+                                        <div class="search-form">
+
+                                            <form id="search" action="/search" method="get">
+                                                <input type="text" name="q" placeholder="Tìm kiếm ..."/>
+                                                <a href="javascript:{}" onclick="document.getElementById('search').submit();"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                <div id="searchFolding"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="head__col--cart">
+                                    <div class="loginRegister">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <!-- <ul class="RegisterLogin">
+                                            <li><a class="login-icon" href="#">Phương Quỳnh</a></li>
+                                            <li><a href="/user/signout">Thoát</a></li>
+                                        </ul> -->
+                                        <ul class="RegisterLogin">
+                                            <li><a href="/user/signup">Đăng ký</a></li>
+                                            <li><a href="/user/signin">Đăng nhập</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="cart-label">
+                                        <a class="totalCart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>4</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head__nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="nav__left">
+                                <ul>
+                                    <li><a href="../index.html">Trang chủ</a></li>
+                                    <li  class="navIsset"><a href="index.html">Tin tức<i class="fa fa-caret-down"></i></a>
+                                        <ul class="navHome__list">
+                                            <li class="navIsset"><a href="news/index.html">Thời trang</a>
+                                                <ul class="ul-level-3">
+                                                    <li><a href="#">Thời trang nữ</a></li>
+                                                    <li><a href="#">Thời trang nam</a></li>
+                                                    <li><a href="#">Làm đẹp</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Ẩm thực</a></li>
+                                            <li><a href="#">Văn hóa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../product/index.html">Sản phẩm</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navMobile">
+                <ul class="navMobile__list">
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li class="active"><button><i class="fa fa-caret-down"></i></button><a href="index.html">Tin tức</a>
+                        <ul class="nav2">
+                            <li><button><i class="fa fa-caret-down"></i></button><a href="index.html">Thời trang</a>
+                                <ul>
+                                    <li><a href="#">Thời trang nữ</a></li>
+                                    <li><a href="#">Thời trang nam</a></li>
+                                    <li><a href="#">Làm đẹp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Ẩm thực</a></li>
+                            <li><a href="#">Văn hóa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../product/index.html">Sản phẩm</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="../index.html">Trang chủ</a></li>
+                            <li><span>/</span><a href="index.html">Tin tức</a></li>
+                            <li><span>/</span><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="detailNews">
+                        <div>
+                            <h1 class="detail-news__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+                            <div class="single-news__profile">
+                                <span><i class="fa fa-clock-o"></i>12/02/2019</span><span><i class="fa fa-folder-o"></i>category</span><span><i class="fa fa-eye"></i>123</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    
+                    </div>
+
+                    <h2 class="related-post__headline">Bài viết liên quan</h2>
+                    <div class="related-post__list">
+                        <div class="related-post__item">
+                            <div class="related-post__item--inner">
+                                <div class="related-post__item--content">
+                                    <h3 class="related-post__item--title"><a href="#"><i class="fa fa-angle-right"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-post__item">
+                            <div class="related-post__item--inner">
+                                <div class="related-post__item--content">
+                                    <h3 class="related-post__item--title"><a href="#"><i class="fa fa-angle-right"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-post__item">
+                            <div class="related-post__item--inner">
+                                <div class="related-post__item--content">
+                                    <h3 class="related-post__item--title"><a href="#"><i class="fa fa-angle-right"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__title">Tìm kiếm</h3>
+                            <form id="search" action="/search" method="get">
+                                <input type="text" name="q" placeholder="Tìm kiếm ..."/>
+                               <!-- <a class="icon-font icon-magnifier" onclick="document.getElementById('search').submit();"></a>-->
+                                <div id="searchFolding"></div>
+                            </form>
+                        </div>
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__title">Danh mục</h3>
+                            <ul class="news__list-category">
+                                <li class="navIsset"><button></button><a href="#">Mục 1</a>
+                                    <ul class="nav2">
+                                        <li class="navIsset"><button></button><a href="#">Mục con 1</a>
+                                            <ul>
+                                                <li><a href="#">Mục con 1-1</a></li>
+                                                <li><a href="#">Mục con 1-2</a></li>
+                                                <li><a href="#">Mục con 1-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navIsset"><button></button><a href="#">Mục con 2</a>
+                                            <ul>
+                                                <li><a href="#">Mục con 2-1</a></li>
+                                                <li><a href="#">Mục con 2-2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Mục con 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Mục 2</a></li>
+                                <li class="navIsset"><a href="#">Mục 3</a>
+                                    <ul class="nav2">
+                                        <li class="navIsset"><button></button><a href="#">Mục con 3</a>
+                                            <ul>
+                                                <li><a href="#">Mục con 3-1</a></li>
+                                                <li><a href="#">Mục con 3-2</a></li>
+                                                <li><a href="#">Mục con 3-3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>   
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__title">Danh mục tin tức 1</h3>
+                            <ul class="sidebar__news">
+                                <li>
+                                    <div class="sidebar__wrapper--image"><a href="#"><figure class="lazy sidebar__image" data-src="../img/no-image.png"></figure></a></div>
+                                    <div class="sidebar__content">
+                                        <h4>
+                                            <a href="view.html" title="title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </h4>
+                                        <p>12/02/2019</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar__wrapper--image"><a href="#"><figure class="lazy sidebar__image" data-src="../img/no-image.png"></figure></a></div>
+                                    <div class="sidebar__content">
+                                        <h4>
+                                            <a href="view.html" title="title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </h4>
+                                        <p>12/02/2019</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar__wrapper--image"><a href="view.html"><figure class="lazy sidebar__image" data-src="../img/no-image.png"></figure></a></div>
+                                    <div class="sidebar__content">
+                                        <h4>
+                                            <a href="view.html" title="title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </h4>
+                                        <p>12/02/2019</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__title">Danh mục tin tức 2</h3>
+                            <ul class="sidebar__news">
+                                <li>
+                                    <div class="sidebar__wrapper--image"><a href="view.html"><figure class="lazy sidebar__image" data-src="../img/no-image.png"></figure></a></div>
+                                    <div class="sidebar__content">
+                                        <h4>
+                                            <a href="view.html" title="title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </h4>
+                                        <p>12/02/2019</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sidebar__wrapper--image"><a href="view.html"><figure class="lazy sidebar__image" data-src="../img/no-image.png"></figure></a></div>
+                                    <div class="sidebar__content">
+                                        <h4>
+                                            <a href="view.html" title="title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </h4>
+                                        <p>12/02/2019</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__box">
+                            <a href="#">
+                                <figure class="post-last__image lazy" data-src="../img/no-image.png"></figure>
+                            </a>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ul class="f1">
+                                <li>
+                                    <a class="logo" href="/">
+                                        <img src="../img/logo.png" />
+                                    </a>
+                                    <div class="footer__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="footer__title">Về chúng tôi</h3>
+                                    <div class="footer__content">
+                                        <ul>
+                                            <li><a href="#">Liên hệ</a></li>
+                                            <li><a href="#">Giới thiệu</a></li>
+                                            <li><a href="#">Hỗ trợ</a></li>
+                                        </ul>
+                                    </div>
+                                <li>
+                                    <h3 class="footer__title">Chính sách</h3>
+                                    <div class="footer__content">
+                                        <ul>
+                                            <li><a href="#">Giao hàng</a></li>
+                                            <li><a href="#">Đổi trả hàng</a></li>
+                                            <li><a href="#">Hoàn tiền</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="footer__title">Địa chỉ shop</h3>
+                                    <div class="footer__content">
+                                        Số 17, Phùng Khoang 2, Nam Từ Liêm, Hà Nội
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-copyright__inner">
+                                <p>20018 @ Copyright</p>
+
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.lazy.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../js/parsley.min.js"></script>
+    <script src="../js/a.js"></script>
+</html>
