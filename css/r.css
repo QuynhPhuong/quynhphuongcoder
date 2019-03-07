@@ -25,6 +25,9 @@
         height: auto;
         padding: 15px 0;
     }
+    .head__logo img{
+        max-width: 150px;
+    }
     .head__col--form{
         width: 300px;
     }

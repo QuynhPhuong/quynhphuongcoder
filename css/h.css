@@ -480,13 +480,12 @@ a.totalCart{
 #menuMobile{
     display: none;
     width: 40px;
-    padding: 10px 10px;
     color: #333;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
     position: absolute;
-    right: -35px;
+    left:0;
     top: 0;
 }
 .navMobile{
