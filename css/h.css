@@ -186,9 +186,9 @@ body{
     cursor: pointer;
 }
 .loginRegister ul{
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 60px;
+    top: 70px;
     min-width: 186px;
     border: 1px solid #efefef;
     background: #fff;
@@ -196,6 +196,10 @@ body{
     padding: 8px 10px;
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.18);
     z-index: 12;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .loginRegister ul:before {
     border: 9px solid transparent;
@@ -234,7 +238,12 @@ body{
     margin-bottom: 0;
 }
 .loginRegister:hover > ul{
-    display: block;
+    opacity: 1;
+    top: 60px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .head__logo{
     height: 150px;
@@ -349,14 +358,20 @@ body{
     margin-left: 5px;
 }
 .navHome__list{
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 55px;
+    top: 65px;
     background: #fff;
     z-index: 3;
     border: solid 1px #ebebeb;
     border-top: none;
     padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .navHome__list a{
     display: block;
@@ -398,8 +413,12 @@ body{
     color: #000;
 }
 .nav__left li.navIsset:hover .navHome__list{
-    display: flex;
-    flex-direction: row;
+    opacity: 1;
+    top: 55px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .head__nav #search{
     display: flex;
